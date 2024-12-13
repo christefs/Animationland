@@ -32,7 +32,7 @@
             z-index: 1;
             height: 450px;
             width: 80px;
-            background: palegoldenrod;
+            /*background: palegoldenrod;*/
             bottom: 0;
             right: 60px;
 
@@ -158,7 +158,7 @@
             z-index: 2;
             height: 450px;
             width: 80px;
-            background: palegoldenrod;
+            /*background: palegoldenrod;*/
             bottom: 0;
             left: 60px;
 
@@ -174,8 +174,11 @@
             margin: 0 auto;
             width: 220px;
             height: 400px;
-            background: brown;
+            background: #c16a2e;
             bottom: 0;
+
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
 
             /*background: linear-gradient(135deg, teal 25%, transparent 25%) -50px 25px,
             linear-gradient(-135deg, teal 25%, transparent 25%) -50px 25px,
@@ -188,7 +191,7 @@
             z-index: 4;
             width: 80px;
             height: 350px;
-            background: palegoldenrod;
+            /*background: palegoldenrod;*/
             bottom: 0;
             left: 25px;
 
@@ -201,17 +204,23 @@
             z-index: 5;
             width: 200px;
             height: 300px;
-            background: green;
+            background: #c16a2e;
             bottom: 0;
             left: 0;
 
             border-bottom-left-radius: 32px;
+
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+
+            box-shadow: 8px 3px 23px #6a533c;
+            
         }
         .layer-6 {
             z-index: 6;
             width: 80px;
             height: 250px;
-            background: palegoldenrod;
+            /*background: palegoldenrod;*/
             bottom: 0;
             right: 30px;
 
@@ -250,12 +259,40 @@
             z-index: 7;
             width: 160px;
             height: 200px;
-            background: wheat;
+            background: #c16a2e;
             bottom: 0;
             right: 0;
 
             border-bottom-right-radius: 32px;
+
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+
+            box-shadow: -8px 3px 23px #6a533c;
         }
+
+        .layer_grass-up {
+            width: 100%;
+            height: 14px;
+            background: #2ec766;
+
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .layer_grass {
+            width: 100%;
+            height: 45px;
+            background: lightgreen;
+
+            background: linear-gradient(135deg, #2ec766 30%, transparent 25%) -50px 0,
+            linear-gradient(-135deg, #2ec766 30%, transparent 25%) -50px 0,
+            linear-gradient(45deg, #c16a2e 30%, transparent 25%) -34px 0,
+            linear-gradient(-45deg, #c16a2e 30%, #965715 25%) -34px 0;
+            background-size: 30px;
+
+        }
+
         .layer-8 {
             z-index: 8;
             width: 200px;
@@ -318,7 +355,10 @@
                 <div class="head__eye head__eye--right"></div>
             </div>
         </div>
-        <div class="layer-3"></div>
+        <div class="layer-3">
+            <div class="layer_grass-up"></div>
+            <div class="layer_grass"></div>
+        </div>
         <div class="layer-bunny layer-4">
             <input type="checkbox">
             <div class="left-ear--outer"></div>
@@ -330,7 +370,10 @@
                 <div class="head__eye head__eye--right"></div>
             </div>
         </div>
-        <div class="layer-5"></div>
+        <div class="layer-5">
+            <div class="layer_grass-up"></div>
+            <div class="layer_grass"></div>
+        </div>
         <div class="layer-bunny layer-6">
             <input type="checkbox">
             <div class="left-ear--outer"></div>
@@ -343,7 +386,10 @@
             </div>
         </div>
         <h3 class="score">Score: </h3>
-        <div class="layer-7"></div>
+        <div class="layer-7">
+            <div class="layer_grass-up"></div>
+            <div class="layer_grass"></div>
+        </div>
         <div class="layer-8"></div>
         <div class="layer-9"></div>
         <div class="layer-10"></div>
